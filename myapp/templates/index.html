@@ -8,7 +8,11 @@
 
     </head>
     <body>
-        <h1>Hello {{name_value}}</h1>
+        {% if name_value % }
+            <h1>Hello {{name_value}}</h1>
+        {% else %}
+            <h1>Hello World!</h1>
+        {% endif % }
         <p>Hello Flask!</p>
     </body>
 </html>
